@@ -20,7 +20,7 @@ class GoogleDrive:
     >>>   gdrive.write(['dirA', 'subdir2'], 'filename.bak', file_content, 'text/plain')
     """
 
-    SCOPES = [ 'https://www.googleapis.com/auth/drive' ]
+    SCOPE = 'https://www.googleapis.com/auth/drive'
 
     def __init__(self, credentials, max_retry=3, retry_interval=1):
         self.max_retry = max_retry
